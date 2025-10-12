@@ -1040,6 +1040,34 @@ a:hover {
   .loader-split-right {
     width: 58.2%;
   }
+
+  .hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 135%;
+  height: 100%;
+  background: url('img/Header1.3.jpg') no-repeat center right;
+  background-size: cover;
+  z-index: -1;
+  } 
+
+  .hero-text {
+    margin-bottom:-3rem;
+  }
+
+  .countdown-container {
+    margin : 3rem 0;
+  }
+
+  .mouse-scroll {
+    bottom: 1rem;
+  }
+
+  .hero-title span {
+    position: static;
+  }
 }
 
 @media (max-width: 768px) {
