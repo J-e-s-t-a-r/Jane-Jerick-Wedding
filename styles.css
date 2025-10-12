@@ -369,7 +369,8 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/hero-section.png') no-repeat center center;
+  background: url('img/Header1.jpg') no-repeat center center;
+  /* background: url('https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/hero-section.png') no-repeat center center; */
   background-size: cover;
   z-index: -1;
 }
@@ -982,6 +983,9 @@ a:hover {
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 576px) {
+    .mainNav {
+      padding: 1.5rem;
+  }
   .hero-title {
       font-size: 2.8rem;
   }
@@ -996,6 +1000,9 @@ a:hover {
 }
 
 @media (max-width: 767.98px) {
+    .mainNav {
+      padding: 1.5rem;
+  }
   .section-title {
       font-size: 2.5rem;
   }
