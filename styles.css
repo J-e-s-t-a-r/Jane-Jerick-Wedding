@@ -161,9 +161,9 @@ a:hover {
 
 .loader-text {
   /*font-family: var(--heading-font);*/
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Updock", cursive;
   font-size: 5rem;
-  font-style: italic;
+  /* font-style: italic; */
   color: var(--loader-accent-color);
   margin-top: 20px;
   opacity: 0;
@@ -1026,6 +1026,7 @@ a:hover {
    .loader-text {
     margin-left : -12%;
     margin-top: -15%;
+    font-family: "Updock", cursive;
   }
 
   .loader-content {
