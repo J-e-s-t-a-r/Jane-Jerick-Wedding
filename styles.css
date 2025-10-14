@@ -828,9 +828,9 @@ a:hover {
 /* --- Gift Registry Section --- */
 .gift-logo {
   max-width: 150px;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   transition: filter 0.3s ease;
-  opacity: 0.7;
+  /* opacity: 0.7; */
 }
 
 .gift-logo:hover {
