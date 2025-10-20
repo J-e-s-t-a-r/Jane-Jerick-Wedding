@@ -808,7 +808,7 @@ a:hover {
 
 /* --- RSVP Section --- */
 .rsvp-section {
-  background: url('https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/rsvp-section.png') no-repeat center center fixed;
+  background: url('img/Header.JPG') no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
