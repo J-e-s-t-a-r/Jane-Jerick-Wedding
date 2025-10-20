@@ -100,7 +100,7 @@
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
                 <span class="pre-title">We're Getting Married</span>
                 <h1 class="hero-title">Jerick <span>&</span> Jane</h1>
-                <p class="hero-text">Join us as we celebrate our love and begin our journey together on December 13, 2025 in the historical Barasoain Church of Malolos City, Bulacan.</p>
+                <p class="hero-text">Join us as we celebrate our love and begin our journey together on December 13, 2025 at Our Lady of Mount Carmel Parish (Barasoain Church) of Malolos City, Bulacan.</p>
 
                 <div class="countdown-container">
                     <div class="countdown-item">
@@ -483,55 +483,101 @@
     <!-- ============================================ -->
     <!--              GALLERY SECTION                 -->
     <!-- ============================================ -->
+    <!-- Include Bootstrap CSS & JS (if not yet included) -->
     <section id="gallery" class="section-padding">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-title" data-aos="fade-up">Photo Gallery</h2>
-                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">MOMENTS WE CHERISH</p>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 gallery-item" data-aos="zoom-in">
-                    <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/the-proposal.png" data-lightbox="gallery" data-title="The Proposal">
-                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/the-proposal.png" class="img-fluid" alt="Gallery Image">
-                        <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 gallery-item" data-aos="zoom-in" data-aos-delay="100">
-                    <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/our-first-trip.png" data-lightbox="gallery" data-title="Our First Trip">
-                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/our-first-trip.png" class="img-fluid" alt="Gallery Image">
-                        <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 gallery-item" data-aos="zoom-in" data-aos-delay="200">
-                    <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/coffee-shop-memories.png" data-lightbox="gallery" data-title="Coffee Shop Memories">
-                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/coffee-shop-memories.png" class="img-fluid" alt="Gallery Image">
-                        <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 gallery-item" data-aos="zoom-in" data-aos-delay="300">
-                    <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/hiking-adventures.png" data-lightbox="gallery" data-title="Hiking Adventures">
-                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/hiking-adventures.png" class="img-fluid" alt="Gallery Image">
-                        <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 gallery-item" data-aos="zoom-in" data-aos-delay="400">
-                    <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/engagement-photoshoot.png" data-lightbox="gallery" data-title="Engagement Photoshoot">
-                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/engagement-photoshoot.png" class="img-fluid" alt="Gallery Image">
-                        <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 gallery-item" data-aos="zoom-in" data-aos-delay="500">
-                    <a href="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/just-because.png" data-lightbox="gallery" data-title="Just Because">
-                        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/wedding_template/just-because.png" class="img-fluid" alt="Gallery Image">
-                        <div class="overlay"><i class="fas fa-search-plus"></i></div>
-                    </a>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <!-- <a href="#" class="btn btn-primary">View Full Gallery</a> -->
-            </div>
+    <div class="container">
+        <div class="text-center">
+        <h2 class="section-title" data-aos="fade-up">Photo Gallery</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">MOMENTS WE CHERISH</p>
         </div>
+
+        <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+            <a href="img/Gallery1.JPG" data-lightbox="gallery">
+                <img src="img/Gallery1.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery2.JPG" data-lightbox="gallery">
+                <img src="img/Gallery2.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery3.JPG" data-lightbox="gallery">
+                <img src="img/Gallery3.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery4.JPG" data-lightbox="gallery">
+                <img src="img/Gallery4.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery5.JPG" data-lightbox="gallery">
+                <img src="img/Gallery5.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery6.JPG" data-lightbox="gallery">
+                <img src="img/Gallery6.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery7.JPG" data-lightbox="gallery">
+                <img src="img/Gallery7.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery8.JPG" data-lightbox="gallery">
+                <img src="img/Gallery8.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+            </a>
+            </div>
+
+            <div class="carousel-item">
+            <a href="img/Gallery9.JPG" data-lightbox="gallery">
+                <img src="img/Gallery9.JPG" class="d-block w-100 gallery-img" alt="Gallery Image">
+            </a>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="6"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="7"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="8"></button>
+            <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="9"></button>
+        </div>
+        </div>
+    </div>
     </section>
+
 
     <!-- ============================================ -->
     <!--                 RSVP SECTION                 -->
@@ -539,11 +585,10 @@
     <section id="rsvp" class="section-padding rsvp-section">
         <div class="overlay-bg"></div>
         <div class="container text-center rsvp-content">
-            <h2 class="section-title" data-aos="fade-up">Are You Attending?</h2>
-            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">PLEASE RESPOND BY SEPTEMBER 25, 2025</p>
+            <h2 class="section-title" data-aos="fade-up">Are You Attending?</h2><br>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">PLEASE RESPOND BY <B>NOVEMBER 15, 2025</B></p>
             <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">We can't wait to celebrate with you! Please let us know if you can make it.</p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScerx6Jq40-1V-5aCBFMZ_fOo9zQWAOOL0XAbuTxUlUEA_m3A/viewform?embedded=true" width="640" height="888" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            <!-- <a href="#" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="300">RSVP Now</a> -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScerx6Jq40-1V-5aCBFMZ_fOo9zQWAOOL0XAbuTxUlUEA_m3A/viewform?embedded=true" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="300" target="_blank">RSVP Now</a>
         </div>
     </section>
 
@@ -729,5 +774,6 @@
 
     <!-- Custom JS -->
      <script src="script.js"></script>
+
 </body>
 </html>

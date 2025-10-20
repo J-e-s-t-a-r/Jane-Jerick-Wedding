@@ -1078,6 +1078,12 @@ a:hover {
     padding-top: 3rem;
     padding-left: 20px;
   }
+
+  .gallery-img {
+  height: 200px; /* Adjust this to your preference */
+  object-fit: cover;
+  border-radius: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1155,4 +1161,47 @@ a:hover {
       font-size: 4.5rem;
   }
 }
+
+/* Fixed height but zoomed out view */
+.gallery-img {
+  height: 500px; /* Adjust as needed */
+  object-fit: contain; /* show the whole image, not cropped */
+  background-color: #000; /* black background to fill empty space */
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+/* Optional: subtle zoom-in hover effect */
+.gallery-img:hover {
+  transform: scale(1.03);
+}
+
+/* Overlay styling (unchanged) */
+#gallery .carousel-item {
+  position: relative;
+}
+
+#gallery .carousel-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#gallery .carousel-item:hover .overlay {
+  opacity: 1;
+}
+
+#gallery .overlay i {
+  color: #fff;
+  font-size: 2rem;
+}
+
 
