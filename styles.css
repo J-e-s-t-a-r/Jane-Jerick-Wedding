@@ -1,7 +1,7 @@
 :root {
   /*--primary-color: #c89d9c;*/
   --primary-color: #4169e1;
-  --secondary-color: #4a4a4a;
+  --secondary-color: #000000;
   --background-color: #fdfaf6;
   --dark-color: #2c2c2c;
   --text-color: #555;
@@ -387,7 +387,7 @@ a:hover {
   font-size: 1rem;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: #002c76;
   margin-bottom: 1.5rem;
   display: block;
 }
@@ -983,6 +983,140 @@ a:hover {
 }
 
 
+/* Fixed height but zoomed out view */
+.gallery-img {
+  height: 500px; /* Adjust as needed */
+  object-fit: contain; /* show the whole image, not cropped */
+  background-color: #000; /* black background to fill empty space */
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+/* Optional: subtle zoom-in hover effect */
+.gallery-img:hover {
+  transform: scale(1.03);
+}
+
+/* Overlay styling (unchanged) */
+#gallery .carousel-item {
+  position: relative;
+}
+
+#gallery .carousel-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#gallery .carousel-item:hover .overlay {
+  opacity: 1;
+}
+
+#gallery .overlay i {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.entourage {
+  margin-top: 10px;
+  font-size: 32px;
+  font-family:'Great Vibes', cursive;
+}
+
+.bridegroom {
+  margin-top: 10px;
+  font-family:'Great Vibes', cursive;
+}
+
+.entourage-header {
+  color: #002c76;
+  border-bottom: 2px solid #d1b464;
+  padding-bottom: 6px;
+}
+
+.entourage-greatvibes {
+  margin-top: 10px;
+  font-size: 32px;
+  font-family:'Great Vibes', cursive;
+}
+
+.entourage-playfair {
+  margin-top: 10px;
+  font-size: 32px;
+  font-family:'Playfair Display', serif;
+}
+
+.entourage-parisienne {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family:'Parisienne', cursive;
+}
+
+.entourage-raleway {
+  margin-top: 5px;
+  font-size: 20px;
+  font-family:'Raleway', sans-serif;
+}
+
+.entourage-cookie {
+  margin-top: 10px;
+  font-size: 32px;
+  font-family:'Cookie', cursive;
+}
+
+
+.card-ghost {
+  border: 0;
+  box-shadow: 0 6px 18px rgba(18,38,63,0.06);
+  border-radius: .75rem;
+}
+
+.monogram {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .24em;
+  font-size: 1.25rem;
+  color: var(--navy);
+}
+
+.copy-btn {
+  font-size: .85rem;
+  padding: .28rem .5rem;
+}
+
+.palette-container {
+  position: relative;
+  gap: 0;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 0px; /* controls overlap */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid #fff;
+}
+
+.circle:first-child {
+  margin-left: 0;
+}
+
+.circle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  z-index: 5;
+}
+
+
 /* --- Responsive Adjustments --- */
 @media (max-width: 576px) {
     .mainNav {
@@ -1084,6 +1218,14 @@ a:hover {
   object-fit: cover;
   border-radius: 10px;
   }
+
+  .circle {
+  margin-left: -30px; /* controls overlap */
+  }
+
+  .gap-5 {
+    gap: 2rem !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1109,6 +1251,10 @@ a:hover {
       margin-right: 1rem;
       margin-bottom: 1rem;
   }
+
+  .circle {
+  margin-left: -30px; /* controls overlap */
+}
 }
 
 @media (max-width: 991.98px) {
@@ -1162,46 +1308,6 @@ a:hover {
   }
 }
 
-/* Fixed height but zoomed out view */
-.gallery-img {
-  height: 500px; /* Adjust as needed */
-  object-fit: contain; /* show the whole image, not cropped */
-  background-color: #000; /* black background to fill empty space */
-  border-radius: 10px;
-  transition: transform 0.4s ease;
-}
 
-/* Optional: subtle zoom-in hover effect */
-.gallery-img:hover {
-  transform: scale(1.03);
-}
-
-/* Overlay styling (unchanged) */
-#gallery .carousel-item {
-  position: relative;
-}
-
-#gallery .carousel-item .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#gallery .carousel-item:hover .overlay {
-  opacity: 1;
-}
-
-#gallery .overlay i {
-  color: #fff;
-  font-size: 2rem;
-}
 
 
